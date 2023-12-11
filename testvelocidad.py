@@ -23,15 +23,15 @@ def test():
     mensaje2.set('listo')
 
 ventana = tkinter.Tk()
-#ventana.attributes('-fullscreen',True)
+ventana.attributes('-fullscreen',True)
 ventana.overrideredirect(True)
 ventana.overrideredirect(False)
 ventana.geometry('400x400')
 ventana.title('velocidad')
-#imagen = PhotoImage(file="logo.png")
+imagen = PhotoImage(file="logo.png")
 Label(ventana,  bd=0).pack()
 
-#imagen2 = PhotoImage(file="logo.png")
+
 Button(ventana,  width=150, height=150, borderwidth=1, command=test().pack()
 
 mensaje = StringVar()
